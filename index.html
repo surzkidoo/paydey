@@ -63,7 +63,7 @@
                 <img src="myasset/Ellipse 2.png" class="hero-bg" alt="">
                 <div class="hero-header">
                     <h3>Payment Made</h3>
-                    <h1>Simple, Swift & Secure<span></span></h1>
+                    <h1 id="text">Simple<span></span></h1>
                 </div>
 
                 <div class="download-container">
@@ -750,4 +750,42 @@
 </body>
 
 <script src="myasset/app.js"></script>
+
+<script>
+    const texts = [
+    'Simple', "Swift" , 'Secure'
+    ];
+
+    const textElement = document.getElementById('text');
+    let textIndex = 0;
+    let cursorPosition = 0;
+
+    function typeText() {
+      const currentText = texts[textIndex];
+      textElement.innerText = currentText.slice(0, cursorPosition);
+      cursorPosition++;
+
+      if (cursorPosition <= currentText.length) {
+        setTimeout(typeText, 100);
+      } else {
+        setTimeout(() => deleteText(currentText), 1000);
+      }
+    }
+
+    function deleteText(currentText) {
+      cursorPosition--;
+
+      if (cursorPosition >= 0) {
+        textElement.innerText = currentText.slice(0, cursorPosition);
+        setTimeout(() => deleteText(currentText), 50);
+      } else {
+        cursorPosition = 0; // Reset cursor position
+        textIndex = (textIndex + 1) % texts.length;
+        textElement.innerText = ''; // Clear the text
+        setTimeout(typeText, 500); // Introduce a slight delay before typing the next text
+      }
+    }
+
+    typeText();
+  </script>
 </html>
