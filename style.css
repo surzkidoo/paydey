@@ -190,11 +190,15 @@ nav ul .active{
     position: absolute;
     bottom: 0px;
     left: 40px;
+    width: 40px;
+    height: 40px;
+    top: 50%;
 }
 .hero-bg-2{
     position: absolute;
     bottom: 0px;
-    right: 0px;
+    right: -25px;
+    width: 60px;
 }
 
 .hero-header{
@@ -260,6 +264,7 @@ height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .hero-image{
@@ -269,8 +274,8 @@ height: auto;
 .hero-ball{
     background: linear-gradient(150.76deg, #1D4EFF 12.22%, #0934A4 99.78%);
     position: absolute;
-    height: 230px;
-    width: 230px;
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
     box-shadow: 0 0 150px 1px #1D4EFF;
     z-index: -1;
@@ -1370,6 +1375,7 @@ color: rgba(179, 179, 179, 1);
         position: absolute;
         bottom: 0px;
         left: 40px;
+        top: initial;
     }
     .hero-bg-2{
         position: absolute;
@@ -1644,6 +1650,14 @@ color: rgba(179, 179, 179, 1);
         padding: 0 40px;
         height: 1290px;
         margin-top: 50px;
+    }
+
+    .line-bg{
+        bottom: -1%;
+        right: 0px;
+        left: 0;
+        width: 70%;
+        position: absolute;
     }
     
     
