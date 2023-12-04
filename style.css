@@ -577,7 +577,7 @@ display: none;
     justify-content: center;
     flex-direction: column;
     gap: 50px;
-    margin-top: 250px;
+    margin-top: 0px;
 }
 
 .com h1{
@@ -1233,6 +1233,7 @@ color: rgba(179, 179, 179, 1);
     nav{
         position: initial;
         width: initial;
+        display: flex;
     }
 
     .open-menu{
