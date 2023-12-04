@@ -156,7 +156,7 @@ nav ul .active{
     overflow: hidden;
     white-space: nowrap !important;
     width: initial;
-    align-self: flex-start;
+    align-self: center;
     border-right: 2px solid var(--primary);
     animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite alternate;
   }
@@ -212,6 +212,9 @@ background: linear-gradient(103.55deg, #1D4EFF 8.63%, #0934A4 63.77%);
 -webkit-background-clip: text;
 padding: 0;
 text-align: center;
+background-clip: text;
+text-align: center !important;
+background-color: red;
 }
 
 .hero-header h1 span{
@@ -1241,7 +1244,14 @@ color: rgba(179, 179, 179, 1);
     .close-menu{
        display: none;
     }
-
+    #text {
+        overflow: hidden;
+        white-space: nowrap !important;
+        width: initial;
+        align-self: flex-start;
+        border-right: 2px solid var(--primary);
+       
+    }
     .nav-desc-container{
         display: none;
     }
