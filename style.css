@@ -569,6 +569,7 @@ display: none;
 
 .com-image-mobile{
     width: 100%;
+    margin: 0 -30px;
 }
 .com{
     display: flex;
