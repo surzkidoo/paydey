@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
     font-family: Open Sans;
 }
 :root{
@@ -984,6 +985,14 @@ color: var(--primary);
     width: 158px;
 }
 
+.show-header-image{
+    display: none;
+}
+
+.show-header-image-mobile{
+    display: flex;
+}
+
 .qr-container{
     display: flex;
     flex-direction: column;
@@ -1605,6 +1614,7 @@ color: rgba(179, 179, 179, 1);
     font-weight: 700;
     line-height: 68px;
     color: rgba(9, 52, 164, 1);
+    text-align: left;
     }
     
     .utility-download{
@@ -2176,6 +2186,14 @@ color: rgba(179, 179, 179, 1);
     .show-header svg{
         width: 302px;
         height: 122px;
+    }
+
+    .show-header-image{
+        display: flex;
+    }
+
+    .show-header-image-mobile{
+        display: none;
     }
     
     .show-container{
