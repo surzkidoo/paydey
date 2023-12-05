@@ -150,6 +150,8 @@ nav ul .active{
     position: relative;
     width: 100%;
     gap: 120px;
+    overflow: hidden;
+
 }
 
 #text {
@@ -217,8 +219,10 @@ background: linear-gradient(103.55deg, #1D4EFF 8.63%, #0934A4 63.77%);
 padding: 0;
 text-align: center;
 background-clip: text;
-text-align: center !important;
+text-align: start !important;
 background-color: red;
+height: 80px;
+display: inline-block;
 }
 
 .hero-header h1 span{
@@ -253,8 +257,14 @@ text-align: center;
 }
 
 .download-container .app-image{
-    width: 100%;
+    width: 60%;
 height: auto;
+}
+
+.app-container{
+    display: flex;
+    justify-content: center;
+
 }
 
 .hero-img-container{
@@ -269,6 +279,7 @@ height: auto;
 
 .hero-image{
     width: 100%;
+    transform: scale(1.4);
 }
 
 .hero-ball{
@@ -480,6 +491,14 @@ color: var(--primary);
     padding: 0 25px;
     width: 100%;
 
+}
+.line-bg{
+    bottom: 0%;
+    right: 0px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
 }
 
 
@@ -1399,6 +1418,7 @@ color: rgba(179, 179, 179, 1);
     background-clip: text;
     padding: 0;
     text-align: left;
+    height: 100px;
 
     }
     
@@ -1447,6 +1467,8 @@ color: rgba(179, 179, 179, 1);
     
     .hero-image{
         width: 100%;
+        transform: scale(1);
+
     }
     
     .hero-ball{
@@ -1653,11 +1675,12 @@ color: rgba(179, 179, 179, 1);
     }
 
     .line-bg{
-        bottom: -1%;
+        bottom: -10%;
         right: 0px;
         left: 0;
-        width: 70%;
+        width: 100%;
         position: absolute;
+        z-index: -1;
     }
     
     
@@ -2108,6 +2131,8 @@ color: rgba(179, 179, 179, 1);
         position: relative;
         bottom: 0;
     }
+
+      
     
     .show-header svg{
         width: 302px;
@@ -2128,8 +2153,9 @@ color: rgba(179, 179, 179, 1);
     .qr-container{
         display: flex;
         flex-direction: row;
-        gap: 150px;
+        gap:120px;
         align-items: center;
+        width: 600px;
     }
     
     
@@ -2137,9 +2163,10 @@ color: rgba(179, 179, 179, 1);
         display: flex;
         flex-direction: column;
         gap: 30px;
+        width: initial;
     }
     
-    .qr-avail-container >svg{
+    .qr-avail-container > svg{
         width: 115px;
         height: 18px;
     }
