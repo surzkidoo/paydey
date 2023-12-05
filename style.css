@@ -221,8 +221,8 @@ text-align: center;
 background-clip: text;
 text-align: start !important;
 background-color: red;
-height: 80px;
-display: inline-block;
+height: 70px;
+
 }
 
 .hero-header h1 span{
@@ -236,10 +236,15 @@ display: inline-block;
 .hero-header h3{
     font-size: 22px;
     font-weight: 700;
-    line-height: 68px;
     letter-spacing: 0em; 
     text-align: center;
-   
+}
+
+.hero-circle{
+    position: absolute;
+    right: 25px;
+    top: 9%;
+    align-items: center;
 }
 
 .download-container{
@@ -493,13 +498,24 @@ color: var(--primary);
 
 }
 .line-bg{
-    bottom: 0%;
+    bottom: -10%;
+    right: 0px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    display: none;
+}
+
+.line-bg-mobile{
+    bottom: -18%;
     right: 0px;
     left: 0;
     width: 100%;
     position: absolute;
     z-index: -1;
 }
+
 
 
 .hub-bg{
@@ -612,6 +628,7 @@ display: none;
     position: relative;
     padding: 0 25px;
     height: auto;
+    overflow: hidden;
     
 }
 
@@ -620,11 +637,13 @@ display: none;
     width: 100%;
     height: auto;
     display: none;
+    
 }
 
 .com-image-mobile{
     width: 100%;
-    margin: 0 -30px;
+    margin: 0 0px;
+    transform: scale(1.3);
 }
 .com{
     display: flex;
@@ -1408,6 +1427,14 @@ color: rgba(179, 179, 179, 1);
         gap: 0px;
     }
     
+    .hero-circle{
+        position: absolute;
+        right: 40%;
+        top: 9%;
+        align-items: center;
+    }
+
+    
     .hero-header h1{
     font-size: 80px;
     font-weight: 700;
@@ -1681,6 +1708,18 @@ color: rgba(179, 179, 179, 1);
         width: 100%;
         position: absolute;
         z-index: -1;
+        display: flex;
+    }
+
+    
+    .line-bg-mobile{
+        bottom: -10%;
+        right: 0px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        display: none;
     }
     
     
