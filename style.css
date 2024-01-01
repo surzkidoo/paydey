@@ -26,6 +26,8 @@
     .nav-desc-container{
         display: none;
     }
+
+
    
     header{
         display: flex;
@@ -34,11 +36,16 @@
         align-items: center;
         padding: 40px 80px;
         align-items: center;
+        max-width: 1400px;
+        margin: auto;
+
     }
     main{
         display: flex;
         flex-direction: column;
         gap: 80px;
+        max-width: 1400px;
+        margin: auto;
     }
     
     nav{
