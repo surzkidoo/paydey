@@ -459,6 +459,42 @@ text-align: center;
     justify-content: center;
 }
 
+.feature-indicator-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    align-items: center;
+    
+}
+
+
+.feature-indicator{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.feature-indicator div{
+    width: 9px;
+height: 4px;
+background: #F5F5F5;
+flex-shrink: 0;
+}
+.feature-indicator .active{
+    width: 68px !important;
+    border-radius: 20px;
+background: #0934A4 !important;
+}
+
+.feature-indicator-mobile p{
+    color: #8F8F8F;
+text-align: center;
+font-family: Open Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
 .feature h1{
     font-family: Open Sans;
 font-size: 12px;
@@ -888,7 +924,7 @@ text-align: center;
 .test{
     display: flex;
     flex-direction: column;
-    border-radius: 22px;
+    border-radius: 0px;
 background: #DDE5FF;
 overflow: hidden;
 gap: 24px;
@@ -1273,16 +1309,26 @@ text-align: center;
 
 .input-box{
     display: flex;
-    border-radius: 21px;
-background: #FFF;
-padding: 3px;
+    flex-direction: column;
+background: none;
 align-items: center;
 justify-content: center;
 padding: 10px;
 padding-left: 10px;
-gap: 4px;
-align-self: stretch;
+gap: 21px;
 width: 100%;
+
+}
+
+.input-box .input{
+    display: flex;
+    background: #fff;
+    border-radius: 21px;
+    align-self: stretch;
+    gap: 4px;
+    padding: 10px;
+    justify-content: center;
+    
 
 }
 
@@ -1307,7 +1353,7 @@ width: 50%;
 
 
 .input-box button{
-    display: none;
+    display: flex;
 }
 
 
@@ -1389,6 +1435,24 @@ line-height: normal;
     font-family: 400;
 }
 
+.shop-mobile{
+    display: block;
+}
+
+.shop-desk{
+    display: none;
+}
+
+.get-mobile{
+    display: block;
+    transform: scale(1.1);
+    margin-top: 10px;
+}
+
+.get-desk{
+    display: none;
+}
+
 @media only screen and (min-width: 768px) {
 
     
@@ -1429,7 +1493,7 @@ line-height: normal;
             align-items: center;
             padding: 40px 80px;
             align-items: center;
-            max-width: 1400px;
+            max-width: 1200px;
             margin: auto;
     
         }
@@ -1437,8 +1501,10 @@ line-height: normal;
             display: flex;
             flex-direction: column;
             gap: 80px;
-            max-width: 1400px;
+            max-width: 1200px;
             margin: auto;
+            overflow: initial;
+
         }
         
         nav{
@@ -1645,8 +1711,9 @@ line-height: normal;
         }
     
         .take-container img{
-            width: 100%;
-            flex: 1;
+            width: 479px;
+            flex-grow: 1;
+            /* flex: 1; */
         }
     
         .take-desc-container{
@@ -1822,7 +1889,7 @@ line-height: normal;
         gap: 22px;
         background-color:rgba(29, 78, 255, 0.3);
         padding: 30px 24px;
-        width: 49.5%;
+        width: 49.3%;
         border-radius: 10px;
         align-items: flex-start;
     }
@@ -2598,16 +2665,25 @@ line-height: normal;
     
     .input-box{
         display: flex;
+        flex-direction: row;
         border-radius: 21px;
     background: #FFF;
-    padding: 3px;
+    padding: 0px;
     align-items: center;
+    padding: 3px;
+    justify-content: space-between;
     align-self: start;
     padding-left: 10px;
     gap: 8px;
     width: 100%;
     }
     
+    .input-box .input{
+        align-items: flex-start;
+        padding: 0;
+        align-items: center;
+    }
+
     .input-box svg{
         flex-shrink: 0;
     }
@@ -2695,6 +2771,26 @@ line-height: normal;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    }
+
+    .feature-indicator-mobile{
+        display: none;
+    }
+
+    .shop-mobile{
+        display: none;
+    }
+
+    .shop-desk{
+        display: block;
+    }
+
+    .get-mobile{
+        display: none;
+    }
+
+    .get-desk{
+        display: block;
     }
 
 }
