@@ -658,6 +658,7 @@ width: 100%;
     border-radius: 10px;
     flex-shrink: 0;
     max-width: 105px;
+    width: 105px;
     flex: 1;
 }
 
@@ -666,7 +667,7 @@ font-size: 12px;
 font-weight: 700;
 letter-spacing: 0em;
 text-align: center;
-    /* white-space: nowrap; */
+    white-space: nowrap;
 
 
 }
