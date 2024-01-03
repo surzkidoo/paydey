@@ -638,8 +638,13 @@ width: 100%;
     display: flex;
     flex-direction: row;
     gap: 8px;
-    
 }
+
+.saving-container .section-2 > .saving-card{
+    flex-grow: 1;
+}
+
+
 
 .saving-card{
     padding: 21px 20px;
@@ -652,8 +657,8 @@ width: 100%;
     flex-direction: column;
     border-radius: 10px;
     flex-shrink: 0;
+    max-width: 105px;
     flex: 1;
-    max-width: 121px;
 }
 
 .saving-card h1{
@@ -661,6 +666,8 @@ font-size: 12px;
 font-weight: 700;
 letter-spacing: 0em;
 text-align: center;
+    /* white-space: nowrap; */
+
 
 }
 
@@ -673,6 +680,7 @@ letter-spacing: 0em;
 text-align: center;
     color: rgba(83, 83, 83, 1);
     display: none;
+    
 }
 
 .saving-card svg{
@@ -689,7 +697,7 @@ text-align: center;
     margin: 0px 0px;
     background-color: rgba(29, 78, 255, 0.15);
     border-radius: 47px;
-    padding: 20px;
+    padding: 50px 20px;
     gap: 135px;
 }
 
@@ -2061,6 +2069,8 @@ line-height: normal;
         flex-direction: column;
         border-radius: 10px;
         width: 257px;
+        min-width: none;
+        flex: none;
         max-width: initial;
     }
     
@@ -2070,6 +2080,7 @@ line-height: normal;
     line-height: 25px;
     letter-spacing: 0em;
     text-align: center;
+    white-space: wrap;
     
     }
     
