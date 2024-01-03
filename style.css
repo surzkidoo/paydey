@@ -1634,6 +1634,7 @@ line-height: normal;
             gap: 22px;
             padding-left: 80px;
             flex: 1;
+            width: 100%;
             flex-shrink: 0;
         }
         
@@ -1674,6 +1675,7 @@ line-height: normal;
         background-clip: text;
         padding: 0;
         text-align: left;
+        white-space: nowrap;
     
         }
     
@@ -1698,6 +1700,7 @@ line-height: normal;
             border: 1px solid rgba(29, 78, 255, 1);
             border-radius: 19px;
             align-self: self-start;
+            
     
         }
         
@@ -1994,10 +1997,10 @@ line-height: normal;
     }
     
     .save-bg{
-        left: -2%;
+        left: -4%;
         z-index: -10;
         position: absolute;
-        transform: translateY(-5%);
+        transform: translateY(-12%);
         display: block;
     }
     
