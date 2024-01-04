@@ -577,6 +577,7 @@ display: none;
     position: absolute;
     transform: translateY(-5%);
     display: none;
+
 }
 
 
@@ -1535,7 +1536,7 @@ line-height: normal;
             align-items: center;
             padding: 40px 80px;
             align-items: center;
-            max-width: 1200px;
+            max-width: 1400px;
             margin: auto;
     
         }
@@ -1543,7 +1544,7 @@ line-height: normal;
             display: flex;
             flex-direction: column;
             gap: 120px;
-            max-width: 1200px;
+            max-width: 1400px;
             margin: auto;
             overflow: initial;
 
@@ -1763,6 +1764,8 @@ line-height: normal;
     
         .take-container img{
             width: 479px;
+            height: 479px;
+
             flex-grow: 1;
             /* flex: 1; */
         }
@@ -2000,8 +2003,9 @@ line-height: normal;
         left: -4%;
         z-index: -10;
         position: absolute;
-        transform: translateY(-12%);
+        /* transform: translateY(-12%); */
         display: block;
+        
     }
     
     
@@ -2173,6 +2177,7 @@ line-height: normal;
         width: initial;
         transform: scale(1);
         margin-top: 0;
+        margin-bottom: -45px;
     
     }
     
