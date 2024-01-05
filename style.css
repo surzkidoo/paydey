@@ -179,10 +179,11 @@ gap: 48px;
         bottom: 0px;
         left: 40px;
         top: initial;
+        display: none;
     }
     .hero-bg-2{
         position: absolute;
-        bottom: 0px;
+        bottom: -30px;
         right: 0px;
         right: -7%;
         width: 80.457px;
@@ -197,8 +198,8 @@ height: 80.457px;
     
     .hero-circle{
         position: absolute;
-        right: 80%;
-        top: 60%;
+        right: 70%;
+        top: 48%;
         align-items: center;
     }
 
@@ -269,6 +270,7 @@ color: rgba(143, 143, 143, 1);
     .hero-image{
         max-width: 100%;
         transform: scale(1.2);
+        padding-bottom: 60px;
         
 
     }
@@ -276,10 +278,10 @@ color: rgba(143, 143, 143, 1);
     .hero-ball{
         background: linear-gradient(150.76deg, #1D4EFF 12.22%, #0934A4 99.78%);
         position: absolute;
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
         border-radius: 50%;
-        box-shadow: 0 10px 80px 60px #1D4EFF;
+        box-shadow: 0 10px 150px 0px #1d4eff98;
         z-index: -1;
     }
     
@@ -1660,9 +1662,10 @@ line-height: normal;
         
         .hero-circle{
             position: absolute;
-            right: 30%;
-            top: 9%;
+            right: 35%;
+            top: 4%;
             align-items: center;
+            display: block;
         }
     
         
@@ -1735,6 +1738,7 @@ line-height: normal;
         .hero-image{
             width: 100%;
             transform: scale(1);
+            padding-bottom: 0;
     
         }
         
@@ -1744,7 +1748,7 @@ line-height: normal;
             height: 250px;
             width: 250px;
             border-radius: 50%;
-            box-shadow: 0 10px 140px 60px #1D4EFF;
+            box-shadow: 0 0px 190px 10px #1d4eff98;
             z-index: -1;
         }
         
