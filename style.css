@@ -1646,6 +1646,7 @@ line-height: normal;
             bottom: 0px;
             left: 40px;
             top: initial;
+            display: flex !important;
         }
         .hero-bg-2{
             position: absolute;
